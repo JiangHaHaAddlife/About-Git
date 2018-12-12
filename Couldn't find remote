@@ -1,0 +1,14 @@
+如果是新建的仓库（ repositories ）的话在pull代码的时候，出现这个提示，可以忽略不计，直接提交就可以。
+
+git config user.email/git config --gloabl user.email
+使用以上命令来检查本地的用户名和邮箱是否填写正确
+
+检查远程仓库配置
+
+git remote -v
+如果远程仓库信息有误，则删除本地仓库配置，并且设置相关地址
+
+git remote rm origin
+git remote add origin XXXX
+
+还是不行的话可以找到文件路径下 git文件所在，打开config文件，删除[remote "origin"] 下信息。重复1，2步骤。
